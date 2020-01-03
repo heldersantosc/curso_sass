@@ -1,0 +1,96 @@
+body {
+  background-color: red($color: #000000);
+}
+
+a {
+  color: blue;
+}
+
+p {
+  padding: 1px;
+}
+
+/*Seletores*/
+nav {
+  width: 100%;
+  background: #000;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    color: #fff;
+    display: inline-block;
+  }
+
+  .btn {
+    color: blue;
+    align-items: center;
+  }
+  font: {
+    family: "Times New Roman";
+    style: italic;
+    size: 30px;
+    weight: bold;
+  }
+}
+/*Propriedades aninhadas*/
+/*font: {
+    family: "Times New Roman";
+    style: italic;
+    size: 30px;
+    weight: bold;
+  }
+*/
+
+/*pseudo-elements*/
+a {
+  color: #ffa;
+  &:hover {
+    color: blue;
+  }
+}
+
+/*variáveis*/
+$width: 100%;
+$font-size: 1.2rem;
+$background: #962acd;
+$color: #fff;
+$border-style: solid 1px $color;
+
+div {
+  background: $background;
+  color: $color;
+  width: $width;
+  font-size: $font-size;
+}
+
+$width-rem: 3.5rem;
+$width-px: 300px;
+$width: 300;
+$font: "Lucida Grande";
+$weight: bold;
+
+$bg: red;
+$bg-section: rgba(0, 0, 0, 0.7);
+$font-color: #ffff;
+
+div {
+  .abc {
+    width: $width-rem;
+  }
+  .def {
+    font: {
+      family: $font;
+      weight: $weight;
+    }
+  }
+  .ghi {
+    background-color: $bg;
+    color: $font-color;
+  }
+  .jkl {
+    background-color: $bg-section;
+  }
+}

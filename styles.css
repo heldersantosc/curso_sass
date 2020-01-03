@@ -1,0 +1,61 @@
+@charset "UTF-8";
+body {
+  background-color: 0; }
+
+a {
+  color: blue; }
+
+p {
+  padding: 1px; }
+
+/*Seletores*/
+nav {
+  width: 100%;
+  background: #000;
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold; }
+  nav ul {
+    list-style: none; }
+  nav li {
+    color: #fff;
+    display: inline-block; }
+  nav .btn {
+    color: blue;
+    align-items: center; }
+
+/*Propriedades aninhadas*/
+/*font: {
+    family: "Times New Roman";
+    style: italic;
+    size: 30px;
+    weight: bold;
+  }
+*/
+/*pseudo-elements*/
+a {
+  color: #ffa; }
+  a:hover {
+    color: blue; }
+
+/*variáveis*/
+div {
+  background: #962acd;
+  color: #fff;
+  width: 100%;
+  font-size: 1.2rem; }
+
+div .abc {
+  width: 3.5rem; }
+
+div .def {
+  font-family: "Lucida Grande";
+  font-weight: bold; }
+
+div .ghi {
+  background-color: red;
+  color: #ffff; }
+
+div .jkl {
+  background-color: rgba(0, 0, 0, 0.7); }
