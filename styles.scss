@@ -94,3 +94,64 @@ div {
     background-color: $bg-section;
   }
 }
+
+/*Interpolacao*/
+
+$name: destaque;
+$attr: border;
+
+p.#{$name} {
+  #{$attr}-color: blue;
+}
+
+p {
+  .ab {
+    $font-size: 12px;
+    $lin-height: 30px;
+    font: #{$font-size}/#{$lin-height};
+  }
+}
+
+/* Extends , uso dos atributos das outras classes */
+
+/*Classe*/
+.msg {
+  border: 1px solid;
+  padding: 4px;
+  text-align: center;
+}
+
+/*Herdando atributos da classe */
+.msg-error {
+  @extend .msg;
+  border-color: white;
+  color: black;
+}
+
+/* Hover */
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hoverlink {
+  @extend a:hover;
+  color: black;
+}
+
+/*class*/
+
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.attention {
+  font-size: 3em;
+  background-color: #ff0;
+}
+
+.seriousError {
+  @extend .error;
+  @extend .attention;
+  border-width: 3px;
+}

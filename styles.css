@@ -36,7 +36,7 @@ nav {
 /*pseudo-elements*/
 a {
   color: #ffa; }
-  a:hover {
+  a:hover, .hoverlink {
     color: blue; }
 
 /*variáveis*/
@@ -59,3 +59,41 @@ div .ghi {
 
 div .jkl {
   background-color: rgba(0, 0, 0, 0.7); }
+
+/*Interpolacao*/
+p.destaque {
+  border-color: blue; }
+
+p .ab {
+  font: 12px/30px; }
+
+/* Extends , uso dos atributos das outras classes */
+/*Classe*/
+.msg, .msg-error {
+  border: 1px solid;
+  padding: 4px;
+  text-align: center; }
+
+/*Herdando atributos da classe */
+.msg-error {
+  border-color: white;
+  color: black; }
+
+/* Hover */
+a:hover, .hoverlink {
+  text-decoration: underline; }
+
+.hoverlink {
+  color: black; }
+
+/*class*/
+.error, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.attention, .seriousError {
+  font-size: 3em;
+  background-color: #ff0; }
+
+.seriousError {
+  border-width: 3px; }
